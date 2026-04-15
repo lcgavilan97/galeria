@@ -1,10 +1,10 @@
 <?php
 // config.php - Database connection settings
 
-$host = 'your-rds-endpoint.rds.amazonaws.com'; // Reemplaza con el endpoint de tu RDS
+$host = 'database-1.cefum66ee2iv.us-east-1.rds.amazonaws.com'; // Reemplaza con el endpoint de tu RDS
 $dbname = 'galeria';
-$username = 'your-username'; // Usuario de RDS
-$password = 'your-password'; // Contraseña de RDS
+$username = 'admin'; // Usuario de RDS
+$password = 'admin123'; // Contraseña de RDS
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
